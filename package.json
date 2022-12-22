@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.7.0",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.2.1",
+    "@mui/material": "^5.2.3",
+    "@mui/styled-engine-sc": "^5.1.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -29,9 +34,9 @@
     "workbox-streams": "^6.5.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-scripts --max_old_space_size=2560 --openssl-legacy-provider start",
+    "build": "react-scripts --max_old_space_size=2560 --openssl-legacy-provider build",
+    "test": "react-scripts --openssl-legacy-provider test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
